@@ -11,13 +11,13 @@ public class Cercle {
 	}
 	
 	// methode perimetre
-	public double perimetre() { 
+	public double calcPerimetre() { 
 		double perimetre = 2 * Math.PI * rayon;
 		return perimetre;
 	}
 
 	// methode surface
-	public double surface() { 
+	public double calcSurface() { 
 		double surface = Math.PI * (rayon * rayon);
 		return surface;
 	}

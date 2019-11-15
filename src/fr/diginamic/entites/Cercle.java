@@ -22,6 +22,14 @@ public class Cercle {
 		return surface;
 	}
 
+	public double getRayon() {
+		return rayon;
+	}
+
+	public void setRayon(double rayon) {
+		this.rayon = rayon;
+	}
+
 
 	
 }

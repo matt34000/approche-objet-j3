@@ -7,8 +7,8 @@ public class CercleFactory {
 	
 	public static Cercle creerCercle(double pRayon) {
 
-		Cercle cer = new Cercle(pRayon);
-		return cer;
+		Cercle cerc = new Cercle(pRayon);
+		return cerc;
 	}
 	
 	

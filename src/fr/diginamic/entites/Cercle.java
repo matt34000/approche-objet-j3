@@ -6,7 +6,7 @@ public class Cercle {
 	private double rayon = 0;
 
 	// Constructor
-	public Cercle(int ray) {
+	public Cercle(double ray) {
 		this.rayon = ray;
 	}
 	

@@ -6,6 +6,14 @@ public class TestBanque {
 		
 		
 		Compte compte1 = new Compte(45712654, 650842.14);
+		Compte compte2 = new Compte(45712654, 650842.14);
+		
+		boolean a = compte1.equals(compte2);
+		
+		System.out.println(a);
+		
+		
+		
 		
 		//System.out.println("numero : " + compte1.getNumero());
 		//System.out.println("solde : " + compte1.getSolde());

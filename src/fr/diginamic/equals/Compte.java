@@ -13,18 +13,18 @@ public class Compte {
 
 	
 	public String toString() { 
-		return "Numéro de compte : " + numero + " | " + "Solde : " + solde + " €";
+		return "Numéro de compte : " + numero + " - " + "Solde : " + solde + " €";
 		
 	}
 	
 	
 	@Override
 	public boolean equals(Object object) {
-	if (!(object instanceof Compte)) {
-	return false;
-	}
-	Compte other = (Compte) object;
-	return this.numero==other.getNumero() && this.solde == other.getSolde();
+		if (!(object instanceof Compte)) {
+			return false;
+		}
+		Compte other = (Compte) object;
+		return this.numero == other.getNumero() && this.solde == other.getSolde();
 	}
 
 	

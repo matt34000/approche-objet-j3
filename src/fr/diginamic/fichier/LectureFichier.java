@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
-// j'ai téléchargé commons-io-2.6.jar, je l'ai importé, mais il ne le trouve pas dans cette page
-// erreur : FileUtils cannot be resolved
+
 
 public class LectureFichier {
 	public static void main(String[] args) {
@@ -19,6 +18,15 @@ public class LectureFichier {
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
+		
+		
+		
+		//String filePath = ClassLoader.getSystemClassLoader().getResource("recensement.csv").getFile();
+		//System.out.println(filePath);
+		//Recensement recensement = RecensementUtils.lire(filePath);
+		
+		
+		
 	}
 }
 

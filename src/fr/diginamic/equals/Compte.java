@@ -13,7 +13,7 @@ public class Compte {
 
 	
 	public String toString() { 
-		return "Numéro de compte : " + numero + " - " + "Solde : " + solde + " €";
+		return "NumÃ©ro de compte : " + numero + " - " + "Solde : " + solde + " ï¿½";
 		
 	}
 	

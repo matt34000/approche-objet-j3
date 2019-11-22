@@ -14,7 +14,6 @@ public class Ville {
 	
 	
 	public Ville(int codeRegion, String nomRegion, int codeDept, int codeCommune, String nomCommune, int population) {
-		super();
 		this.codeRegion = codeRegion;
 		this.nomRegion = nomRegion;
 		this.codeDept = codeDept;

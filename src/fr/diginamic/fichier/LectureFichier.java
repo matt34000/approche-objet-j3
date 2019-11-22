@@ -9,7 +9,7 @@ import org.apache.commons.io.FileUtils;
 public class LectureFichier {
 	public static void main(String[] args) {
 		try {
-			File file = new File("C:/temp/recensement population 2016.csv");
+			File file = new File("E:/diginamic/_sts/191119/recensement population 2016.csv");
 			List<String> lignes = FileUtils.readLines(file, "UTF-8");
 			for (String ligne : lignes) {
 				System.out.println(ligne);

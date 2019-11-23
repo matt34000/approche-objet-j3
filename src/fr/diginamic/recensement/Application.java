@@ -31,18 +31,25 @@ public class Application {
 
 		/*
 		 * // On commence par découper la ligne en morceaux sur la base du
-		 * caractère séparateur « ; » . De plus on ne récupère que les morceaux
-		 * qui nous intéressent. En l’occurrence on ignore les morceaux 3 et 4
-		 * dont on a pas besoin dans le TP String[] morceaux = ligne.split(";");
-		 * String codeRegion = morceaux[0]; String nomRegion = morceaux[1];
-		 * String codeDepartement = morceaux[2]; String codeCommune =
-		 * morceaux[5]; String nomCommune = morceaux[6]; String population =
-		 * morceaux[7]; // Pour la population, avant la conversion en int, il
-		 * faut d’abord supprimer les // espaces qui se trouvent à l’intérieur.
-		 * int populationTotale = Integer.parseInt(population.replace(" ",
-		 * "").trim()); // On cree enfin la ville avec toutes les données utiles
-		 * Ville ville = new Ville(codeRegion, nomRegion, codeDepartement,
-		 * codeCommune, nomCommune, populationTotale);
+		 * // caractère séparateur « ; » . De plus on ne récupère que les morceaux
+		 * // qui nous intéressent. En l’occurrence on ignore les morceaux 3 et 4
+		 * // dont on a pas besoin dans le TP
+		 *  
+		 * String[] morceaux = ligne.split(";");
+		 * String codeRegion = morceaux[0];
+		 * String nomRegion = morceaux[1];
+		 * String codeDepartement = morceaux[2];
+		 * String codeCommune = morceaux[5];
+		 * String nomCommune = morceaux[6];
+		 * String population = morceaux[7];
+		 * 
+		 * // Pour la population, avant la conversion en int, il
+		 * // faut d’abord supprimer les espaces qui se trouvent à l’intérieur
+		 * 
+		 * int populationTotale = Integer.parseInt(population.replace(" ", "").trim());
+		 * 
+		 * // On cree enfin la ville avec toutes les données utiles
+		 * Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
 		 * 
 		 */
 		

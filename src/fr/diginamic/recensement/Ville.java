@@ -3,17 +3,17 @@ package fr.diginamic.recensement;
 public class Ville {
 
 	
-	private int codeRegion;
+	private String codeRegion;
 	private String nomRegion;
-	private int codeDept;
-	private int codeCommune;
+	private String codeDept;
+	private String codeCommune;
 	private String nomCommune;
-	private int population;
+	private int populationTotale;
 	
 	
 	
 	
-	public Ville(int codeRegion, String nomRegion, int codeDept, int codeCommune, String nomCommune, int population) {
+	public Ville(String codeRegion, String nomRegion, String codeDept, String codeCommune, String nomCommune, int populationTotale) {
 		this.codeRegion = codeRegion;
 		this.nomRegion = nomRegion;
 		this.codeDept = codeDept;
@@ -25,14 +25,14 @@ public class Ville {
 
 
 
-	public int getCodeRegion() {
+	public String getCodeRegion() {
 		return codeRegion;
 	}
 
 
 
 
-	public void setCodeRegion(int codeRegion) {
+	public void setCodeRegion(String codeRegion) {
 		this.codeRegion = codeRegion;
 	}
 
@@ -53,28 +53,28 @@ public class Ville {
 
 
 
-	public int getCodeDept() {
+	public String getCodeDept() {
 		return codeDept;
 	}
 
 
 
 
-	public void setCodeDept(int codeDept) {
+	public void setCodeDept(String codeDept) {
 		this.codeDept = codeDept;
 	}
 
 
 
 
-	public int getCodeCommune() {
+	public String getCodeCommune() {
 		return codeCommune;
 	}
 
 
 
 
-	public void setCodeCommune(int codeCommune) {
+	public void setCodeCommune(String codeCommune) {
 		this.codeCommune = codeCommune;
 	}
 
@@ -95,25 +95,16 @@ public class Ville {
 
 
 
-	public int getPopulation() {
-		return population;
+	public int getPopulationTotale() {
+		return populationTotale;
 	}
 
 
 
 
-	public void setPopulation(int population) {
-		this.population = population;
+	public void setPopulationTotale(int populationTotale) {
+		this.populationTotale = populationTotale;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
 }

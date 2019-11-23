@@ -4,11 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
 import org.apache.commons.io.FileUtils;
 
 
 public class Application {
 	public static void main(String[] args) {
+		
+		//Scanner scanner = new Scanner(System.in);
 		
 		
 		//List<String> list = new ArrayList<>();
@@ -24,13 +28,15 @@ public class Application {
 			List<String> lignes = FileUtils.readLines(file, "UTF-8");
 			
 			int cpt = 0;
+			int cpv = 0;
+			int poptot = 0;
 			
 			for (String ligne : lignes) {
 				
 							
 					if (cpt != 0) {
 					
-						System.out.println(ligne);
+						//System.out.println(ligne);
 						
 						String[] morceaux = ligne.split(";");
 						String codeRegion = morceaux[0];
@@ -43,7 +49,12 @@ public class Application {
 						 
 						Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, nomCommune, populationTotale);
 						
+						if (ville.getPopulationTotale() > 200000) {
+							System.out.println(cpv + "\t" + ville.getCodeDept() + "\t\t" + ville.getNomCommune() + "\t\t\t\t" + ville.getPopulationTotale());
+							cpv++;
+						}
 						
+						//poptot = poptot + ville.getPopulationTotale();
 						
 					}
 
@@ -53,6 +64,8 @@ public class Application {
 			}
 			
 			
+			//System.out.println("poptot : " + poptot);
+			
 			
 			
 			//System.out.println("Nombre de lignes :" + lignes.size());
@@ -61,6 +74,21 @@ public class Application {
 		}
 		
 
+		/*
+
+		1 Population d’une ville donnée
+		2 Population d’un département donné
+		3 Population d’une région donnée
+		4 Afficher les 10 régions les plus peuplées
+		5 Afficher les 10 départements les plus peuplés
+		6 Afficher les 10 villes les plus peuplées d’un département
+		7 Afficher les 10 villes les plus peuplées d’une région
+		8 Afficher les 10 villes les plus peuplées de France
+		9 Sortir
+  
+		 */
 		
+		
+		//scanner.close();
 	}
 }

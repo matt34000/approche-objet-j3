@@ -20,6 +20,12 @@ public class Ville {
 		this.populationTotale = populationTotale;
 	}	
 	
+
+	
+	@Override
+	public String toString() {
+		return "Département n°" + codeDept + " - Ville : " + nomCommune + " - " + populationTotale + " hab.";
+	}
 	
 	
 	public String getCodeRegion() {

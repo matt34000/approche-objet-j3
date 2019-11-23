@@ -27,14 +27,15 @@ public class Application {
 						
 			List<String> lignes = FileUtils.readLines(file, "UTF-8");
 			
-			int cpt = 0;
 			int cpv = 0;
 			int poptot = 0;
+			
+			lignes.remove(0);
 			
 			for (String ligne : lignes) {
 				
 							
-					if (cpt != 0) {
+					
 					
 						//System.out.println(ligne);
 						
@@ -56,10 +57,10 @@ public class Application {
 						
 						//poptot = poptot + ville.getPopulationTotale();
 						
-					}
+					
 
 					
-				cpt++;
+				
 					
 			}
 			

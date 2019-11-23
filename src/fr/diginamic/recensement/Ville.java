@@ -2,29 +2,26 @@ package fr.diginamic.recensement;
 
 public class Ville {
 
-	
+
 	private String codeRegion;
 	private String nomRegion;
 	private String codeDept;
-	private String codeCommune;
 	private String nomCommune;
 	private int populationTotale;
 	
 	
 	
 	
-	public Ville(String codeRegion, String nomRegion, String codeDept, String codeCommune, String nomCommune, int populationTotale) {
+	public Ville(String codeRegion, String nomRegion, String codeDept, String nomCommune, int populationTotale) {
 		this.codeRegion = codeRegion;
 		this.nomRegion = nomRegion;
 		this.codeDept = codeDept;
-		this.codeCommune = codeCommune;
 		this.nomCommune = nomCommune;
-		this.population = population;
-	}
-
-
-
-
+		this.populationTotale = populationTotale;
+	}	
+	
+	
+	
 	public String getCodeRegion() {
 		return codeRegion;
 	}
@@ -67,20 +64,6 @@ public class Ville {
 
 
 
-	public String getCodeCommune() {
-		return codeCommune;
-	}
-
-
-
-
-	public void setCodeCommune(String codeCommune) {
-		this.codeCommune = codeCommune;
-	}
-
-
-
-
 	public String getNomCommune() {
 		return nomCommune;
 	}
@@ -105,6 +88,12 @@ public class Ville {
 	public void setPopulationTotale(int populationTotale) {
 		this.populationTotale = populationTotale;
 	}
+
+
+
+
+
+
 
 
 }

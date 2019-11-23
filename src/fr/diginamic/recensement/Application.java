@@ -27,28 +27,29 @@ public class Application {
 			
 			for (String ligne : lignes) {
 				
-				
+							
+					if (cpt != 0) {
+					
+						System.out.println(ligne);
+						
+						String[] morceaux = ligne.split(";");
+						String codeRegion = morceaux[0];
+						String nomRegion = morceaux[1];
+						String codeDepartement = morceaux[2];
+						String nomCommune = morceaux[5];
+						String population = morceaux[6];
 			
-				if (cpt != 0) {
-				
-					System.out.println(ligne);
+						int populationTotale = Integer.parseInt(population.replace(" ", "").trim());
+						 
+						Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, nomCommune, populationTotale);
+						
+						
+						
+					}
+
 					
-					String[] morceaux = ligne.split(";");
-					String codeRegion = morceaux[0];
-					String nomRegion = morceaux[1];
-					String codeDepartement = morceaux[2];
-					String codeCommune = morceaux[5];
-					String nomCommune = morceaux[6];
-					String population = morceaux[7];
-		
-					int populationTotale = Integer.parseInt(population.replace(" ", "").trim());
-					 
-					Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
+				cpt++;
 					
-					cpt++;
-					
-				}
-			
 			}
 			
 			
